@@ -33,7 +33,7 @@ public class Money
 
     /**
      * Copy Constructor
-     * ADD DESCRIPTION!!!
+     * Copies dollar and cent values from Money object to another object
       */
     public Money (Money other){
         this.dollars = other.dollars;
@@ -108,6 +108,8 @@ public class Money
 
     /**
      * Equals Method
+     * Compares dollar and cents string with another dollar and cent string
+     * Returns true if both are the same
      */
     public boolean equals(Money other){
         return this.dollars == other.dollars && this.cents == other.cents;
@@ -117,9 +119,10 @@ public class Money
 
     /**
      * toString Method
+     * Formats dollar and cent value into $XX.XX
      */
     public String toString(){
-        return String.format("%.3s.%02d", dollars, cents);
+        return String.format("$%.3s.%02d", dollars, cents);
     }
 
 }

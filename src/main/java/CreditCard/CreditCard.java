@@ -8,7 +8,7 @@ public class CreditCard{
     private Money creditLimit;
 
     // Create new credit card account
-    public CreditCard(Person owner, Money balance) {
+    public CreditCard(Person owner, Money creditLimit) {
         this.owner = owner;
         this.balance = new Money(0);
         this.creditLimit = new Money(creditLimit); // Make sure it's the same as set above

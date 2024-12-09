@@ -53,4 +53,4 @@ public class CreditCardDemo
         System.out.println("Balance: " + visa.getBalance());
     }
 }
-// Fixed null error in CreditCard class, credit limit was not passed into the constructor as it originally written balance
+// Fixed null error in CreditCard class, credit limit was not passed into the constructor as it was originally written balance
